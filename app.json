@@ -1,9 +1,9 @@
 {
 	"pages": [
-	    "pages/message/message",
 		"pages/list/list",
+		"pages/message/message",
+		"pages/user/user",
 		"pages/list/option/option",
-	    "pages/user/user",
 		"pages/detail/detail"
 	  ],
 	"window": {
