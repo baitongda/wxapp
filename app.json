@@ -3,13 +3,12 @@
 		"pages/list/list",
 		"pages/user/user",
 	    "pages/message/message",
-	    "pages/home/home",
-	    "pages/driver/driver"
-	  ],
+		"pages/detail/detail"
+	],
 	"window": {
 	  "navigationBarTitleText":"车货匹配",
-	  "navigationBarBackgroundColor":"#09BB07",
-	  "navigationBarTextStyle":"white",
+	  "navigationBarBackgroundColor":"#fafafa",
+	  "navigationBarTextStyle":"black",
 	  "backgroundColor":"#F8F8FA",
 	  "backgroundTextStyle":"black",
 	  "enablePullDownRefresh":false
@@ -45,5 +44,5 @@
 		"request": 10000,
 		"downloadFile": 10000
 	},
-	"debug": true
+	"debug": false
 }

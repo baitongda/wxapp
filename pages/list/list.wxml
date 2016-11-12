@@ -1,7 +1,6 @@
-<view class="section">
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="picker">
-      {{array[index]}}
-    </view>
-  </picker>
-</view>
+<page>
+    <view>水果是大法官</view>
+    <navigator url="../detail/detail">
+        <text>去详情页</text>
+    </navigator>
+</page>

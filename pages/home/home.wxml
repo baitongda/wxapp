@@ -1,1 +1,5 @@
-<view>home</view>
+<page>
+    <view>
+        去
+    </view>
+</page>
