@@ -1,0 +1,48 @@
+{
+	"pages": [
+	    "pages/home/home",
+	    "pages/driver/driver",
+	    "pages/list/list",
+	    "pages/user/user",
+	    "pages/message/message",
+	    "pages/user/user"
+	  ],
+	"window": {
+    "navigationBarTitleText": "最新货源",
+    "navigationBarBackgroundColor":"#F8F8FA",
+    "navigationBarTextStyle":"#7F8389",
+    "backgroundColor":"#FAFAFA",
+    "backgroundTextStyle":"#333",
+    "enablePullDownRefresh":false
+  },
+"tabBar": {
+	"color":"#7F8389",
+	"selectedColor":"#09BB07",
+	"backgroundColor":"#7F8389",
+	"borderStyle":"white",
+	"position":"bottom",
+	"list": [
+	        {
+	          "pagePath": "pages/list/list",
+	          "text": "货源列表",
+	          "iconPath":"images/list.png",
+	          "selectedIconPath":"images/list-selected.png"
+	        }, {
+	          "pagePath": "pages/message/message",
+	          "text": "添加车源信息",
+	          "iconPath":"images/add.png",
+	          "selectedIconPath":"images/add-selected.png"
+	        }, {
+	          "pagePath": "pages/user/user",
+	          "text": "个人中心",
+	          "iconPath":"images/me.png",
+	          "selectedIconPath":"images/me-selected.png"
+	        }
+	    ]
+	},
+	"networkTimeout": {
+	"request": 10000,
+	"downloadFile": 10000
+	},
+	"debug": true
+}
