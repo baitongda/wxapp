@@ -1,1 +1,27 @@
-<view>1</view>
+<form class="info">
+	<view class="input-list">
+		<block wx:for="{{infoList}}">
+			<view class="popup">
+				<view class="information">{{item.information}}</view>
+				<view class="select" id="{{index}}" bindtap="{{item.bindBtn}}">{{item.select}}</view>
+			</view>
+		</block>
+		<view class="import">
+			<view class="information">联系方式</view>
+			<input name="tel"  placeholder-style="color:#B2B2B2" maxlength="11" placeholder="请填写您的手机号码"/>
+		</view>
+	</view>
+	<view class="hint">{{textHint}}</view>
+	<button type="primary" class="submit">添加车辆信息</button>
+	<button type="default" class="resume">重新输入</button>
+</form>
+
+<view>
+	<view class="layer"></view>
+	<view class="selected">
+		<view class=""></view>
+		<block wx:for="{{options}}">
+			<view id="{{item.dataid}}">{{item.name}}</view>
+		</block>
+	</view>
+</view>

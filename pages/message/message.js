@@ -1,0 +1,31 @@
+Page({
+	data:{
+		textHint:"欢迎卡友添加您的车辆相关信息，以便于我们帮您更精准的配货和让货主更加了解您。",
+		infoList:[
+			{
+				information:'出发地',
+				select:'请选择地点',
+				bindBtn:'address'
+			},{
+				information:'目的地',
+				select:'请选择地点',
+				bindBtn:'address'
+			},{
+				information:'车辆登记地点',
+				select:'请选择地点',
+				bindBtn:'address'
+			},{
+				information:'货箱类型',
+				select:'请选择货箱类型',
+				bindBtn:'carType'
+			},{
+				information:'货箱长度',
+				select:'请选择货箱长度',
+				bindBtn:'carExtent'
+			}
+		]
+	},
+	address:function(e){
+		console.log(e.currentTarget.id);
+	}
+})
