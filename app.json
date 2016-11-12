@@ -1,27 +1,27 @@
 {
 	"pages": [
-	    "pages/home/home",
-	    "pages/driver/driver",
-	    "pages/list/list",
+		"pages/list/list",
+		"pages/list/option/option",
 	    "pages/user/user",
 	    "pages/message/message",
-	    "pages/user/user"
+			"pages/home/home",
+	    "pages/driver/driver"
 	  ],
 	"window": {
-    "navigationBarTitleText": "最新货源",
-    "navigationBarBackgroundColor":"#F8F8FA",
-    "navigationBarTextStyle":"#7F8389",
-    "backgroundColor":"#FAFAFA",
-    "backgroundTextStyle":"#333",
-    "enablePullDownRefresh":false
-  },
-"tabBar": {
-	"color":"#7F8389",
-	"selectedColor":"#09BB07",
-	"backgroundColor":"#7F8389",
-	"borderStyle":"white",
-	"position":"bottom",
-	"list": [
+	    "navigationBarTitleText": "车货匹配",
+	    "navigationBarBackgroundColor":"#F8F8FA",
+	    "navigationBarTextStyle":"#7F8389",
+	    "backgroundColor":"#FAFAFA",
+	    "backgroundTextStyle":"#333",
+	    "enablePullDownRefresh":false
+	},
+	"tabBar": {
+		"color":"#fff",
+		"selectedColor":"#09BB07",
+		"backgroundColor":"#7F8389",
+		"borderStyle":"white",
+		"position":"bottom",
+		"list": [
 	        {
 	          "pagePath": "pages/list/list",
 	          "text": "货源列表",
@@ -41,8 +41,8 @@
 	    ]
 	},
 	"networkTimeout": {
-	"request": 10000,
-	"downloadFile": 10000
+		"request": 10000,
+		"downloadFile": 10000
 	},
 	"debug": true
 }
