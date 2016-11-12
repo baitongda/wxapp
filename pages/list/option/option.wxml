@@ -1,0 +1,20 @@
+<include src="../head.wxml"/>
+<view class="chunk">
+	<text>定位城市</text>
+	<view class="selected">北京</view>
+</view>
+<view class="chunk">
+	<text>历史记录</text>
+	<view>
+		北京
+		<view class="image"><image src="../../../images/car.png"></image></view>
+		天津
+	</view>
+</view>
+<view class="chunk">
+	<text>A</text>
+	<view>北京</view>
+	<view>北京</view>
+	<view>北京</view>
+	<view>北京</view>
+</view>
