@@ -1,5 +1,11 @@
 Page({
-    data:{},
+    data:{
+        avatar:'',
+        nickname:'',
+        viewTotal:'',
+        favoriteTotal:'',
+        
+    },
     onLoad:function(){
         var me = this;
         wx.getUserInfo({
