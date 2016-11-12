@@ -3,4 +3,7 @@
     <navigator url="../detail/detail">
         <text>去详情页</text>
     </navigator>
+    <navigator url="../success/success">
+        <text>提交成功页</text>
+    </navigator>
 </page>

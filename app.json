@@ -3,7 +3,8 @@
 		"pages/list/list",
 		"pages/user/user",
 	    "pages/message/message",
-		"pages/detail/detail"
+		"pages/detail/detail",
+		"pages/success/success"
 	],
 	"window": {
 	  "navigationBarTitleText":"车货匹配",
