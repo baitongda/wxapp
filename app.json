@@ -4,21 +4,22 @@
 		"pages/message/message",
 		"pages/user/user",
 		"pages/list/option/option",
-		"pages/detail/detail"
+		"pages/detail/detail",
+		"pages/success/success"
 	  ],
 	"window": {
 	    "navigationBarTitleText": "车货匹配",
 	    "navigationBarBackgroundColor":"#F8F8FA",
-	    "navigationBarTextStyle":"#7F8389",
+	    "navigationBarTextStyle":"black",
 	    "backgroundColor":"#FAFAFA",
 	    "backgroundTextStyle":"#333",
 	    "enablePullDownRefresh":false
 	},
 	"tabBar": {
-		"color":"#fff",
+		"color":"#7f8389",
 		"selectedColor":"#09BB07",
-		"backgroundColor":"#7F8389",
-		"borderStyle":"white",
+		"backgroundColor":"#F8F8FA",
+		"borderStyle":"black",
 		"position":"bottom",
 		"list": [
 	        {
@@ -26,12 +27,14 @@
 	          "text": "货源列表",
 	          "iconPath":"images/list.png",
 	          "selectedIconPath":"images/list-selected.png"
-	        }, {
+	        },
+			{
 	          "pagePath": "pages/message/message",
 	          "text": "添加车源信息",
 	          "iconPath":"images/add.png",
 	          "selectedIconPath":"images/add-selected.png"
-	        }, {
+	        },
+			{
 	          "pagePath": "pages/user/user",
 	          "text": "个人中心",
 	          "iconPath":"images/me.png",
@@ -43,6 +46,6 @@
 		"request": 10000,
 		"downloadFile": 10000
 	},
-	"debug": true
+	"debug": false
 
 }

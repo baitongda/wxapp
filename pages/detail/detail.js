@@ -39,6 +39,6 @@ Page({
         phone:'4008003030'
     },
     onLoad:function(options){
-        
+        this.setData()
     }
 })
