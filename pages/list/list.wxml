@@ -1,5 +1,5 @@
 
-<include src="head.wxml"/>
+<include src="../filter/filter.wxml" />
 
 <view class="goods">
 	<view class="monad">

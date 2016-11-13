@@ -3,7 +3,8 @@
 		"pages/list/list",
 		"pages/message/message",
 		"pages/user/user",
-		"pages/list/option/option",
+		"pages/filter/filter",
+		"pages/option/option",
 		"pages/detail/detail",
 		"pages/success/success"
 	  ],
