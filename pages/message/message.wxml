@@ -4,6 +4,7 @@
 			<view class="popup">
 				<view class="information">{{item.information}}</view>
 				<view class="select" id="{{index}}" bindtap="{{item.bindBtn}}">{{item.select}}</view>
+				<input hidden="{{inputHidden}}" name="{{item.name}}" value="{{item.val}}"/>
 			</view>
 		</block>
 		<view class="import">
@@ -12,7 +13,7 @@
 		</view>
 	</view>
 	<view class="hint">{{textHint}}</view>
-	<button formType="submit" class="submit">添加车辆信息</button>
+	<navigator url="../success/success" redirect><button class="submit">添加车辆信息</button></navigator>
 	<button formType="reset" class="resume">重新输入</button>
 </form>
 

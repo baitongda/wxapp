@@ -36,35 +36,47 @@ var size =  [
 			name:"1222",
 			id:'32'
 		}
-	]
+	];
+var list = [
+			{
+				information:'出发地',
+				select:'请选择地点',
+				bindBtn:'address',
+				name:'start',
+				val:''
+			},{
+				information:'目的地',
+				select:'请选择地点',
+				bindBtn:'address',
+				name:'end',
+				val:''
+			},{
+				information:'车辆登记地点',
+				select:'请选择地点',
+				bindBtn:'address',
+				name:'change',
+				val:''
+			},{
+				information:'货箱类型',
+				select:'请选择货箱类型',
+				bindBtn:'carType',
+				name:'car_type',
+				val:''
+			},{
+				information:'货箱长度',
+				select:'请选择货箱长度',
+				bindBtn:'carExtent',
+				name:'car_size',
+				val:''
+			}
+		];
 Page({
 	data:{
 		textHint:"欢迎卡友添加您的车辆相关信息，以便于我们帮您更精准的配货和让货主更加了解您。",
 		hiddenBoolean:true,
+		inputHidden:true,	
 		className:['header'],
-		infoList:[
-			{
-				information:'出发地',
-				select:'请选择地点',
-				bindBtn:'address'
-			},{
-				information:'目的地',
-				select:'请选择地点',
-				bindBtn:'address'
-			},{
-				information:'车辆登记地点',
-				select:'请选择地点',
-				bindBtn:'address'
-			},{
-				information:'货箱类型',
-				select:'请选择货箱类型',
-				bindBtn:'carType'
-			},{
-				information:'货箱长度',
-				select:'请选择货箱长度',
-				bindBtn:'carExtent'
-			}
-		],
+		infoList:list,
 		options:'',
 		screenBtn:'',
 		infoId:'',
@@ -131,25 +143,58 @@ Page({
 		}
 	},
 	overBtn:function(e){
-		var dataId = e.currentTarget.id,
-			arr = this.data.infoList[this.data.infoId];
+		var zone,
+			dataId = e.currentTarget.id,
+			num = this.data.infoId;
+		for(var i=0;i<optionList.length;i++){
+			if(optionList[i].id == dataId){
+				zone = optionList[i].name;
+			}
+		}
 		if(dataId != ''){
+			this.data.infoList[this.data.infoId].val = dataId;
+			this.data.infoList[this.data.infoId].select = zone;
+
+			var newInfo = this.data.infoList;
 			this.setData({
 				hiddenBoolean:!this.data.hiddenBoolean,
-				screenBtn:''
-			})
+				screenBtn:'',
+				infoList:newInfo
+			});
+			
+			console.log(newInfo);
 		}
 	},
 	carBtn:function(e){
-		var me;
+		var me,zone;
+		var dataId = e.currentTarget.id,
+			arr = this.data.infoList[this.data.infoId];
 		if(this.data.infoId == 3){
 			me = type;
 		}else{
 			me = size;
 		}
+		for(var i=0;i<me.length;i++){
+			if(me[i].id == dataId){
+				zone = me[i].name;
+			}
+		}
+		this.data.infoList[this.data.infoId].val = dataId;
+		this.data.infoList[this.data.infoId].select = zone;
+
+		var newInfo = this.data.infoList;
 		this.setData({
 			hiddenBoolean:!this.data.hiddenBoolean,
-			screenBtn:''
+			screenBtn:'',
+			infoList:newInfo
 		})
+	},
+	formReset: function() {
+		this.setData({
+			infoList:list
+		})
+	},
+	formSubmit:function(e){
+		console.log('form发生了submit事件，携带数据为：', e.detail.value)
 	}
 })
