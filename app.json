@@ -3,11 +3,10 @@
 		"pages/list/list",
 		"pages/message/message",
 		"pages/user/user",
-		"pages/filter/filter",
-		"pages/option/option",
+		"pages/trucks/trucks",
 		"pages/detail/detail",
 		"pages/success/success"
-	  ],
+	 ],
 	"window": {
 	    "navigationBarTitleText": "车货匹配",
 	    "navigationBarBackgroundColor":"#F8F8FA",

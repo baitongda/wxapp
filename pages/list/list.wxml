@@ -1,26 +1,25 @@
-
-<include src="../filter/filter.wxml" />
-
-<view class="goods">
-	<view class="monad">
-		<view class="place">
-			<view class="start">
-				<text class="city">怀柔区</text>
-				<text class="province">北京</text>
+<page>
+	<view class="goods">
+		<view class="monad">
+			<view class="place">
+				<view class="start">
+					<text class="city">怀柔区</text>
+					<text class="province">北京</text>
+				</view>
+				<view class="distance">
+					<view class="image"><image src="../../images/truck_on_the_road.png"></image></view>
+					<text>大概200公里</text>
+				</view>
+				<view class="end">
+					<text class="city">武汉</text>
+					<text class="province">湖北</text>
+				</view>
 			</view>
-			<view class="distance">
-				<view class="image"><image src="../../images/truck_on_the_road.png"></image></view>
-				<text>大概200公里</text>
+			<view class="condition">
+				<text class="truck">15米冷藏车</text>
+				<view><text class="article">冻品30吨</text></view>
+				<text class="price">2000元/吨</text>
 			</view>
-			<view class="end">
-				<text class="city">武汉</text>
-				<text class="province">湖北</text>
-			</view>
-		</view>
-		<view class="condition">
-			<text class="truck">15米冷藏车</text>
-			<view><text class="article">冻品30吨</text></view>
-			<text class="price">2000元/吨</text>
 		</view>
 	</view>
-</view>
+</page>
