@@ -1,4 +1,4 @@
-<include src="../head.wxml"/>
+<include src="../filter/filter" />
 <view class="chunk">
 	<text>定位城市</text>
 	<view class="selected">北京</view>
