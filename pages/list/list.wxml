@@ -1,24 +1,24 @@
 <page>
-	<view class="goods">
+	<view class="goods">	
 		<view class="monad">
 			<view class="place">
 				<view class="start">
-					<text class="city">怀柔区</text>
-					<text class="province">北京</text>
+					<text class="city">{{start.city}}</text>
+					<text class="province">{{start.province}}</text>
 				</view>
 				<view class="distance">
 					<view class="image"><image src="../../images/truck_on_the_road.png"></image></view>
-					<text>大概200公里</text>
+					<text>大概{{mileage}}公里</text>
 				</view>
 				<view class="end">
-					<text class="city">武汉</text>
-					<text class="province">湖北</text>
+					<text class="city">{{end.city}}</text>
+	                <text class="province">{{end.province}}</text>
 				</view>
 			</view>
 			<view class="condition">
-				<text class="truck">15米冷藏车</text>
-				<view><text class="article">冻品30吨</text></view>
-				<text class="price">2000元/吨</text>
+				<block wx:for="{{source}}">
+					<view><text class="{{item.classname}}">{{item.content}}</text></view>
+				</block>
 			</view>
 		</view>
 	</view>
