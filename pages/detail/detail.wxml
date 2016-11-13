@@ -21,7 +21,7 @@
         <view wx:for="{{address}}" class="grid">
             <caption>{{item.title}}</caption>
             <text class="content">{{item.content}}</text>
-            <text class="region">定位</text>
+            <text class="region" bindtap="showMap" data-index="{{index}}">定位</text>
         </view>
     </view>
 
@@ -40,7 +40,7 @@
     </view>
 
     <view class="footer">
-        <button class="tel" type="primary" class="tel" bindtap="makePhoneCall">货源电话：{{phone}}</button>
+        <button class="tel" type="primary" class="tel" data-index="{{index}}" bindtap="makePhoneCall">货源电话：{{phone}}</button>
         <button class="favorite" type="default" bindtap="addFavorite">收藏这条货源</button>
     </view>
 

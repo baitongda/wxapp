@@ -4,6 +4,7 @@
 		"pages/message/message",
 		"pages/user/user",
 		"pages/trucks/trucks",
+		"pages/favorites/favorites",
 		"pages/detail/detail",
 		"pages/success/success"
 	 ],
@@ -30,7 +31,7 @@
 	        },
 			{
 	          "pagePath": "pages/message/message",
-	          "text": "添加车源信息",
+	          "text": "我要找货",
 	          "iconPath":"images/add.png",
 	          "selectedIconPath":"images/add-selected.png"
 	        },

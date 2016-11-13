@@ -1,3 +1,4 @@
+var app = getApp();
 Page({
     data:{
         id:'1221',
@@ -39,6 +40,40 @@ Page({
         phone:'4008003030'
     },
     onLoad:function(options){
-        this.setData()
+        var that = this;
+        wx.request({
+            url:'https://2bsapi.360che.com/56/',
+            data:{
+                c:'carlist',
+                m:'ajaxGetShipInfo',
+                sid:options['id'],
+                uid:app['uid']
+            },
+            success:function(res){
+                that.setData(res.data);
+            }
+        })
+    },
+    makePhoneCall:function(){
+        var that = this;
+        wx.makePhoneCall({
+            phoneNumber:that.data['phone']
+        })
+    },
+    showMap:function(e){
+        var index = e.target['dataset'].index;
+        wx.getLocation({
+          type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+          success: function(res) {
+            var latitude = res.latitude
+            var longitude = res.longitude
+            wx.openLocation({
+              latitude: latitude,
+              longitude: longitude,
+              scale: 28
+            })
+          }
+        })
+
     }
 })

@@ -64,6 +64,7 @@
 .address-info .grid{
     position: relative;
     padding:30rpx 80rpx 30rpx 0;
+    min-height:70rpx;
     border-top:1rpx solid #e5e5e5
 }
 .address-info .grid:first-of-type{

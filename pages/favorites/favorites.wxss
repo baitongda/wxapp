@@ -13,7 +13,7 @@
 .place .end{top:0;right:0;}
 .place .city{font-size: 36rpx;color: #333;height:36rpx;line-height:36rpx;margin-bottom:20rpx}
 .place .province{font-size: 28rpx;color: #666;}
-.place .distance{display:block;width:176rpx;padding-top:42rpx;margin: 0 auto; text-align:center;}
+.place .distance{display:block;width:176rpx;padding-top:42rpx;margin: 0 auto;text-align:center;}
 .place .distance image,.place .distance .image{width:176rpx;height:30rpx;margin-bottom:12rpx;overflow:hidden;}
 .place .distance text{color:#8FAACC;line-height: 24rpx;font-size: 24rpx;}
 
