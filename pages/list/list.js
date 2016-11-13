@@ -1,6 +1,33 @@
 
 Page({
-  data: {
-  	list:['出发地','到达地','车长与车型']
-  }
+	data: {
+	  	list:['出发地','到达地','车长与车型'],
+	  	id:'1221',
+		start:{
+		    city:'怀柔区',
+		    province:'北京'
+		},
+		end:{
+		    city:'武汉',
+		    province:'湖北'
+		},
+		mileage:'200',
+		source:[
+		    {
+		        classname:'truck',
+		        content:'15米冷藏车'
+		    },
+		    {
+		        classname:'article',
+		        content:'冻品30吨'
+		    },
+		    {
+		        classname:'price',
+		        content:'2000元/吨'
+		    }
+		]
+	},
+	onLoad:function(options){
+	    this.setData()
+	}
 })
