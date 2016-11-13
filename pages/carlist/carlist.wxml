@@ -2,7 +2,6 @@
 <include src="../filter/filter.wxml" />
 
 <view class="goods">
-	
 	<view class="monad">
 		<view class="place">
 			<view class="start">
@@ -17,11 +16,6 @@
 				<text class="city">{{end.city}}</text>
                 <text class="province">{{end.province}}</text>
 			</view>
-		</view>
-		<view class="condition">
-			<block wx:for="{{source}}">
-				<view><text class="{{item.classname}}">{{item.content}}</text></view>
-			</block>
 		</view>
 	</view>
 </view>

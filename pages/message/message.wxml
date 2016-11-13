@@ -1,9 +1,10 @@
-<form class="info">
+<form class="info" bindsubmit="formSubmit" bindreset="formReset">
 	<view class="input-list">
 		<block wx:for="{{infoList}}">
 			<view class="popup">
 				<view class="information">{{item.information}}</view>
 				<view class="select" id="{{index}}" bindtap="{{item.bindBtn}}">{{item.select}}</view>
+				<input hidden="{{inputHidden}}" name="{{item.name}}" value="{{item.val}}"/>
 			</view>
 		</block>
 		<view class="import">
@@ -12,16 +13,17 @@
 		</view>
 	</view>
 	<view class="hint">{{textHint}}</view>
-	<button type="primary" class="submit">添加车辆信息</button>
-	<button type="default" class="resume">重新输入</button>
+	<navigator url="../success/success" redirect><button class="submit">添加车辆信息</button></navigator>
+	<button formType="reset" class="resume">重新输入</button>
 </form>
 
-<view>
-	<view class="layer"></view>
+<view class="shade" hidden="{{hiddenBoolean}}">
+	<view class="layer" bindtap="hiddenBtn"></view>
 	<view class="selected">
-		<view class=""></view>
 		<block wx:for="{{options}}">
-			<view id="{{item.dataid}}">{{item.name}}</view>
+			<view bindtap="{{screenBtn}}" id="{{item.id}}" class="{{className[index]}}" >
+				<text>{{item.name}}</text>
+			</view>
 		</block>
 	</view>
 </view>
