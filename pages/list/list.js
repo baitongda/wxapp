@@ -1,3 +1,4 @@
+var app = getApp();
 Page({
 	data: {
 	  	list:''
@@ -5,7 +6,7 @@ Page({
 	onLoad:function(options){
 		var that = this;
 		wx.request({
-			url:'https://2bsapi.360che.com/56/',
+			url:app.ajaxurl,
 			data:{
 				c:'carlist',
 				m:'ajaxGetShipList'

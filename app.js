@@ -1,22 +1,24 @@
+var app = getApp();
 App({
     uid:0,
     onLaunch:function(){
         // wx.checkSession({
         //     fail: function(){
                 var that = this;
+                this.ajaxurl='https://2bsapi.360che.com/56/';
                 wx.login({
                     success: function(res) {
                         if (res.code) {
                             //发起网络请求
                             wx.request({
-                                url: 'https://2bsapi.360che.com/56/',
+                                url: that.ajaxurl,
                                 data: {
                                     c:'wxadoc',
                                     code: res.code
                                 },
                                 success:function(res){
                                     if(res && res.data){
-                                        that.uid = res.data['data'].uid
+                                        that.uid = res.data['data'].uid;
                                     }
                                 }
                             })
